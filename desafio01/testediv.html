@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DIV</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color:blue;
+            text-align: center;
+            color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: rgb(248, 4, 4);
+            font-size: 2em;
+        }
+        div:hover{
+            background-color: aqua;
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segura essa Rafa!!!</h1>
+    <div>Primeiro nome
+        <p>Endryu</p>
+    </div>
+    <div>Segundo Nome
+        <p>Daniel</p>
+    </div>
+    <div>Sobrenome 1 
+        <p>Pires</p>
+    </div>
+    <div>Sobrenome 2 
+        <p>De Menezes</p>
+    </div>
+</body>
+</html>

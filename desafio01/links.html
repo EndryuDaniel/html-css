@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+    a{
+        color: red;
+        font-weight:bold;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    a:hover{
+        color: blue;
+        font-size: 18px;
+    }
+    .especial{
+        color: blueviolet;
+    }
+    .especial::before{
+        content: 'Antes';
+        color: antiquewhite;
+    }
+    .especial::after{
+        content: 'Depois';
+        color: aliceblue;
+        text-decoration: underline;
+    }
+    .box{
+        background-color: blue;
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin:auto;
+        padding: 20px;
+    }
+    .teste{
+        color: brown;
+        height: 150px;
+        width: 150px;
+        background-color: bisque;
+        text-align: center;
+        margin: auto;
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Links úteis</h1>
+    <ul>
+        <li><a href="https://www.youtube.com.br" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="http://www.facebook.com.br" target="_blank">facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+        <h1 class="box">Olá mundo</h1>
+        <div class="teste">
+            <h1>Teste</h1>
+        </div>
+</body>
+</html>
